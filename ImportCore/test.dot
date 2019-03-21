@@ -1,0 +1,26 @@
+strict graph G {
+  F;
+  I;
+  B;
+  G;
+  C;
+  D;
+  A;
+  H;
+  E;
+  E -- H [ label="3.0" ];
+  B -- C [ label="4.0" ];
+  E -- F [ label="6.0" ];
+  F -- H [ label="11.0" ];
+  C -- I [ label="15.0" ];
+  D -- I [ label="1.0" ];
+  C -- D [ label="2.0" ];
+  A -- F [ label="9.0" ];
+  A -- G [ label="15.0" ];
+  G -- I [ label="2.0" ];
+  D -- E [ label="1.0" ];
+  A -- B [ label="2.0" ];
+  H -- I [ label="4.0" ];
+  G -- H [ label="15.0" ];
+  B -- G [ label="6.0" ];
+}

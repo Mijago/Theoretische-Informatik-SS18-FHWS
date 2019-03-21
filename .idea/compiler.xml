@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ImportCore" />
+        <module name="Uebung1" />
+        <module name="Übung 2 - Euler" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ImportCore" target="11" />
+      <module name="ImportLibrary" target="1.5" />
+      <module name="TheoInf" target="1.5" />
+      <module name="Uebung1" target="11" />
+      <module name="Übung 2 - Euler" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
