@@ -1,4 +1,5 @@
 import graph.GraphDrawer;
+import gui.EulerGui;
 import org.jgrapht.Graph;
 import org.jgrapht.alg.connectivity.ConnectivityInspector;
 import org.jgrapht.alg.cycle.HierholzerEulerianCycle;
@@ -36,6 +37,8 @@ public class Euler {
         System.out.println();
 
         GraphDrawer.drawGraph(graph, new FileWriter(p + ".dot"));
+
+        EulerGui.showGraph(graph);
     }
 
     // Aufgabe 2b)
