@@ -49,8 +49,10 @@ public class Euler {
     }
 
     // Aufgabe 2c)
-    public static void searchCircle(Graph<String, DefaultWeightedEdge> graph) {
+    public static boolean searchCircle(Graph<String, DefaultWeightedEdge> graph) {
         DepthFirstIterator<String, DefaultWeightedEdge> dfi = new DepthFirstIterator<>(graph);
+
+        final boolean[] result = {false};
 
         List<String> visitedNodes = new ArrayList<>();
         String lastNode = null;
@@ -78,31 +80,32 @@ public class Euler {
 
                 String lastNode = visitedNodes.get(visitedNodes.size() - 1);
                 String searchNode = edgeTarget.equals(lastNode) ? edgeSource : edgeTarget;
+
                 if (visitedNodes.contains(searchNode)) {
                     int i = visitedNodes.indexOf(searchNode);
-                    System.out.println("CIRCLE: "+ visitedNodes.subList(i, visitedNodes.size()).toString());
+                    System.out.println("CIRCLE: " + visitedNodes.subList(i, visitedNodes.size()).toString());
                     // CIRCLE
+                    result[0] = true;
                 }
             }
 
             @Override
             public void vertexTraversed(VertexTraversalEvent<String> e) {
-                // System.out.println("vertexTraversed " + e.getVertex());
+                System.out.println("vertexTraversed " + e.getVertex());
                 visitedNodes.add(e.getVertex());
             }
 
             @Override
             public void vertexFinished(VertexTraversalEvent<String> e) {
-                // System.out.println("vertexFinished " + e.getVertex());
+                System.out.println("vertexFinished " + e.getVertex());
 
             }
         });
 
         while (dfi.hasNext()) {
-
             String next = dfi.next();
-
         }
+        return result[0];
     }
 
     // Aufgabe 2b)

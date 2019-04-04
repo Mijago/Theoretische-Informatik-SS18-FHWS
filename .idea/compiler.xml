@@ -9,7 +9,8 @@
         <module name="ImportCore" />
         <module name="Uebung1" />
         <module name="Übung 2 - Euler" />
-        <module name="Übung 3 - Dijkstra" />
+        <module name="Übung 3 - Dijkstra &amp; MST" />
+        <module name="Übung 3 - Dijkstra und Spannbaum" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,7 +19,8 @@
       <module name="TheoInf" target="1.5" />
       <module name="Uebung1" target="11" />
       <module name="Übung 2 - Euler" target="11" />
-      <module name="Übung 3 - Dijkstra" target="11" />
+      <module name="Übung 3 - Dijkstra &amp; MST" target="11" />
+      <module name="Übung 3 - Dijkstra und Spannbaum" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
