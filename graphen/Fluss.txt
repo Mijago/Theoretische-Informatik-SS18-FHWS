@@ -1,12 +1,12 @@
 # 9 Knotendefinitionen, A bis I
 knoten A
-knoten B 
+knoten B
 knoten C
 knoten D
 knoten S
 knoten T
 
-# Kantendefinitionen 
+# Kantendefinitionen
 kante S A 5
 kante S B 2
 kante A C 3

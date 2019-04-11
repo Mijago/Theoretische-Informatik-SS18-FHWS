@@ -24,6 +24,7 @@ public class Dijkstra {
 
         Map<String, NodeInformation> lookup = new HashMap<>();
 
+        // Show the graph in a window
         EulerGui.showGraph(graph);
 
         // initialize the map - for each node exists a NodeInformation object
@@ -71,22 +72,17 @@ public class Dijkstra {
             }
         }
 
-        /*
-        for (NodeInformation value : lookup.values()) {
-            System.out.println(value);
-        }
-        */
-
         List<String> lst = new ArrayList<>();
 
         NodeInformation targetNode = lookup.get(target);
         lst.add(targetNode.nodeName);
-        while(targetNode.predecessor != null) {
+        while (targetNode.predecessor != null) {
             lst.add(0, targetNode.predecessor);
             targetNode = lookup.get(targetNode.predecessor);
         }
 
         System.out.println(String.join(" -> ", lst));
+        System.out.println("Cost: " + lookup.get(target).cost);
     }
 
     private static String getEdgeTarget(Graph<String, DefaultWeightedEdge> graph, NodeInformation currentNode, DefaultWeightedEdge outgoingEdge) {

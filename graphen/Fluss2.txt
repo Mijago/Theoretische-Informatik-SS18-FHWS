@@ -22,7 +22,7 @@ knoten 20
 knoten S
 knoten T
 
-# Kantendefinitionen 
+# Kantendefinitionen
 kante S 1 35
 kante S 2 40
 kante S 3 37
@@ -96,4 +96,3 @@ kante 11 19 2
 kante 16 19 7
 kante 5 20 11
 kante 8 20 14
- 

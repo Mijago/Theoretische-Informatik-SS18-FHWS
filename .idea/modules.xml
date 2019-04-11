@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ImportCore/ImportCore.iml" filepath="$PROJECT_DIR$/ImportCore/ImportCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uebung1/Uebung1.iml" filepath="$PROJECT_DIR$/Uebung1/Uebung1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uebung4/Uebung4.iml" filepath="$PROJECT_DIR$/Uebung4/Uebung4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uebung2/Übung 2 - Euler.iml" filepath="$PROJECT_DIR$/Uebung2/Übung 2 - Euler.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uebung3/Übung 3 - Dijkstra.iml" filepath="$PROJECT_DIR$/Uebung3/Übung 3 - Dijkstra.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uebung3/Übung 3 - Dijkstra und Spannbaum.iml" filepath="$PROJECT_DIR$/Uebung3/Übung 3 - Dijkstra und Spannbaum.iml" />
